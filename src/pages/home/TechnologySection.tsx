@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 // Add logo images to /assets folder and import them
 import dotnet from "../../assets/dotnet.png";

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 // Import logo images
 import govJharkhand from "../../assets/govjharkhand.png";

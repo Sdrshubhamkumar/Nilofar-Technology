@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import WhyNilofar from "../home/WhyNilofar";    
 import Footer from "../home/Footer";
 import { FaHome } from "react-icons/fa";

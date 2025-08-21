@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import MobileAppImage from "../../../assets/Mobileapp.jpg"; // Adjust path as needed
 
 const MobileApplicationDevelopment = () => {

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Introduce from "./Introduce"; 
 import IndustrySection from "../home/IndustrySection";
 import TechnologySection from "../home/TechnologySection";

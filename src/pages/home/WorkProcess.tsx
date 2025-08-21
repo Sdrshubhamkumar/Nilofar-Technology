@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 // Import your actual images below
 import step1 from "../../assets/step1.jpg";

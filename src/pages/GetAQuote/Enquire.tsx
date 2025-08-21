@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import ContactSection from "./ContactSection";
 import Footer from "../home/Footer";

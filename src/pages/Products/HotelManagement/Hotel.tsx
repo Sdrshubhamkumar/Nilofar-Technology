@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import Feature from "./Feature";   
 import Footer from "../../home/Footer";

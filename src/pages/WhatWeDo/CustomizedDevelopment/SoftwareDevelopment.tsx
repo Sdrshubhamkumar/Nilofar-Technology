@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import softwareImg from '../../../assets/Nilofarlogo.png'; // Adjust path as needed
 
 const SoftwareDevelopment = () => {

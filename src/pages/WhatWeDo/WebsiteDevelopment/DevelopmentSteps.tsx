@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { FaClipboardList,FaTools, FaUpload, FaSearch, FaPenNib, FaLaptopCode, FaFileAlt } from "react-icons/fa";
 
 const steps = [

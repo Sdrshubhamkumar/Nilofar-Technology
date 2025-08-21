@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import aboutImg from '../../assets/Nilofarlogo.png'; // Use correct path if you renamed/moved the image
 
 const Introduction = () => {

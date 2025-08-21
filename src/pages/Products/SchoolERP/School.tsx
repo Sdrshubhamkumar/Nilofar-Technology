@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import SchoolErp from "./SchoolErp";
 import Footer from "../../home/Footer";

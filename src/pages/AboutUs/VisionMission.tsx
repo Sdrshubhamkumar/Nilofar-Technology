@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import visionImg from '../../assets/Nilofarlogo.png'; // Use correct path if you renamed the image
 
 const VisionMission = () => {

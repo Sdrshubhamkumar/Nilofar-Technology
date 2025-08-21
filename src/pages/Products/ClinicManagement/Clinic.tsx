@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import ClinicManagement from "./ClinicManag";   
 import Footer from "../../home/Footer";

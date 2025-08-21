@@ -1,5 +1,5 @@
 // src/pages/ClinicManagement.jsx
-import React from "react";
+// import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
 const ClinicManagement = () => {

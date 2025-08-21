@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaUserFriends, FaClock, FaChartLine } from 'react-icons/fa';
 
 const ContactSection = () => {

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import bgImage from "../../../assets/Nilofarlogo.png"; // Adjust path if needed
 
 const ProcessSection = () => {

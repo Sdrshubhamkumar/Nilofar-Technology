@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import RestaurantForm from "./RestaurantForm";
 import Footer from "../../home/Footer";
