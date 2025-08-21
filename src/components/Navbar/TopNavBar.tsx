@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import {
   FaPhoneAlt,
   FaFacebookF,
@@ -15,12 +16,12 @@ const TopNavbar = () => {
         {/* Contact Info (Left Side) */}
         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center md:text-left">
           <div className="flex items-center gap-2">
-            <FaPhoneAlt />
-            <span>+91 7209189151, 9398578331, 7004943471</span>
+        <FaPhoneAlt />
+        <span>+91 7209189151, 9398578331, 7004943471</span>
           </div>
           <div className="flex items-center gap-2 sm:border-l sm:pl-4 border-white">
-            <MdEmail className="text-lg" />
-            <span>contacts.nilofar@gmail.com</span>
+        <MdEmail className="text-lg" />
+        <span>contacts.nilofar@gmail.com</span>
           </div>
         </div>
 
@@ -28,22 +29,25 @@ const TopNavbar = () => {
         <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-center md:text-right">
           {/* Office Hours */}
           <div className="flex items-center gap-2 sm:border-r sm:pr-4 border-white">
-            <MdAccessTime className="text-lg" />
-            <span>Office Hour: 10:00am - 7:00pm</span>
+        <MdAccessTime className="text-lg" />
+        <span>Office Hour: 10:00am - 7:00pm</span>
           </div>
 
           {/* Social Icons */}
           <div className="flex gap-3">
-            <FaFacebookF className="hover:text-gray-300 cursor-pointer" />
-            <FaInstagram className="hover:text-gray-300 cursor-pointer" />
-            <FaLinkedinIn className="hover:text-gray-300 cursor-pointer" />
-            <FaYoutube className="hover:text-gray-300 cursor-pointer" />
+        <FaFacebookF className="hover:text-gray-300 cursor-pointer" />
+        <FaInstagram className="hover:text-gray-300 cursor-pointer" />
+        <FaLinkedinIn className="hover:text-gray-300 cursor-pointer" />
+        <FaYoutube className="hover:text-gray-300 cursor-pointer" />
           </div>
 
-          {/* Get A Quote Button */}
-          <button className="bg-white text-black font-semibold px-4 py-1 rounded hover:bg-gray-200 transition whitespace-nowrap">
+          {/* Get A Quote Button as Link */}
+            <Link
+            to="/enquire-now"
+            className="bg-white text-black font-semibold px-4 py-1 rounded hover:bg-gray-200 transition whitespace-nowrap"
+            >
             Get A Quote
-          </button>
+            </Link>
         </div>
       </div>
     </div>

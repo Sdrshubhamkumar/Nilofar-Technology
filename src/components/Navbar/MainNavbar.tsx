@@ -1,6 +1,51 @@
 import React, { useState } from "react";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
+import { Link } from "react-router-dom";
 import Nilofarlogo from "../../assets/Nilofarlogo.png";
+
+const ListItem = ({ text, children }) => {
+  return (
+    <li className="relative group cursor-pointer">
+      <span className="hover:text-blue-500">{text}</span>
+      {children && (
+        <ul className="absolute left-0 top-full bg-white shadow-lg p-2 hidden group-hover:block z-50 text-sm">
+          {children.map((item, i) => (
+            <li key={i} className="py-1 px-3 hover:bg-gray-100 whitespace-nowrap">
+              <Link to={item.path} className="block">
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+};
+
+const MobileListItem = ({ text, children }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <li>
+      <div
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="flex justify-between items-center cursor-pointer"
+      >
+        <span>{text}</span>
+        {children && <span>{isExpanded ? "▲" : "▼"}</span>}
+      </div>
+      {children && isExpanded && (
+        <ul className="pl-4 mt-1 space-y-1 text-sm">
+          {children.map((item, index) => (
+            <li key={index} className="hover:text-blue-400">
+              <Link to={item.path}>{item.label}</Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+};
 
 const MainNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,10 +53,10 @@ const MainNavbar = () => {
 
   return (
     <>
-      {/* Sticky Main Navbar below Top Navbar */}
-      <nav className="bg-white shadow-sm sticky top-[0px] z-40">
+      {/* Sticky Navbar */}
+      <nav className="bg-white shadow-sm sticky top-0 z-40">
         <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-between py-3">
-          {/* Logo and Company Name */}
+          {/* Logo */}
           <div className="flex items-center gap-3">
             <img
               src={Nilofarlogo}
@@ -25,15 +70,48 @@ const MainNavbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-6 font-medium text-gray-800">
-            <li className="text-blue-500 font-bold cursor-pointer">Home</li>
-            <li className="hover:text-blue-500 cursor-pointer">About Us</li>
-            <li className="hover:text-blue-500 cursor-pointer">What We Do</li>
-            <li className="hover:text-blue-500 cursor-pointer">Products</li>
-            <li className="hover:text-blue-500 cursor-pointer">Career</li>
-            <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
+            <li className="relative group cursor-pointer">
+              <Link to="/" className="hover:text-blue-500">
+                Home
+              </Link>
+            </li>
+            <ListItem
+              text="About"
+              children={[
+                { label: "Introduction", path: "/introduction" },
+                { label: "Vision & Mission", path: "/Vision&Mission" },
+                { label: "Why Choose Us", path: "/why-choose-us" },
+              ]}
+            />
+            <ListItem
+              text="What We Do"
+              children={[
+                { label: "Website Development", path: "/website-development" },
+                { label: "Customized Software Development", path: "/custom-software" },
+                { label: "Mobile Application Development", path: "/mobile-apps" },
+                { label: "Training Programme", path: "/training" },
+              ]}
+            />
+            <ListItem
+              text="Products"
+              children={[
+                { label: "School ERP", path: "/school-erp" },
+                { label: "Hospital ERP", path: "/hospital-erp" },
+                { label: "Clinic Management", path: "/clinic-management" },
+                { label: "Restaurant Billing Software", path: "/restaurant-billing" },
+                { label: "Hotel Management", path: "/hotel-management" },
+                { label: "Inventory Management", path: "/inventory-management" },
+              ]}
+            />
+          <Link to="/career" className="hover:text-blue-500">
+                Career
+              </Link>
+           <Link to="/Contact" className="hover:text-blue-500">
+                Contact US
+              </Link>
           </ul>
 
-          {/* Hamburger Menu (Mobile) */}
+          {/* Mobile Hamburger */}
           <div className="md:hidden">
             <button onClick={toggleSidebar}>
               {isOpen ? (
@@ -57,16 +135,40 @@ const MainNavbar = () => {
           <HiX className="text-2xl text-gray-700 cursor-pointer" onClick={toggleSidebar} />
         </div>
         <ul className="flex flex-col p-6 gap-4 text-gray-800 font-medium">
-          <li className="text-blue-500 font-bold cursor-pointer">Home</li>
-          <li className="hover:text-blue-500 cursor-pointer">About Us</li>
-          <li className="hover:text-blue-500 cursor-pointer">What We Do</li>
-          <li className="hover:text-blue-500 cursor-pointer">Products</li>
-          <li className="hover:text-blue-500 cursor-pointer">Career</li>
-          <li className="hover:text-blue-500 cursor-pointer">Contact Us</li>
+          <MobileListItem
+            text="About"
+            children={[
+              { label: "Introduction", path: "/introduction" },
+              { label: "Vision & Mission", path: "/Vision&Mission" },
+              { label: "Why Choose Us", path: "/why-choose-us" },
+            ]}
+          />
+          <MobileListItem
+            text="What We Do"
+            children={[
+              { label: "Website Development", path: "/website-development" },
+              { label: "Customized Software Development", path: "/custom-software" },
+              { label: "Mobile Application Development", path: "/mobile-apps" },
+              { label: "Training Programme", path: "/training" },
+            ]}
+          />
+          <MobileListItem
+            text="Products"
+            children={[
+              { label: "School ERP", path: "/school-erp" },
+              { label: "Hospital ERP", path: "/hospital-erp" },
+              { label: "Clinic Management", path: "/clinic-management" },
+              { label: "Restaurant Billing Software", path: "/restaurant-billing" },
+              { label: "Hotel Management", path: "/hotel-management" },
+              { label: "Inventory Management", path: "/inventory-management" },
+            ]}
+          />
+          <MobileListItem text="Career" children={[{ label: "Career", path: "/career" }]} />
+          <MobileListItem text="Contact Us" children={[{ label: "Contact", path: "/contact" }]} />
         </ul>
       </div>
 
-      {/* Overlay to close sidebar */}
+      {/* Overlay */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black opacity-40 z-30"
