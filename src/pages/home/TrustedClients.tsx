@@ -1,7 +1,7 @@
 // import React from "react";
 
 // Import logo images
-import govJharkhand from "../../assets/govjharkhand.png";
+import govJharkhand from "../../assets/govJharkhand.png";
 import chasMunicipal from "../../assets/chasMunicipal.png";
 import optiva from "../../assets/optiva.png";
 import stech from "../../assets/stech.png";
