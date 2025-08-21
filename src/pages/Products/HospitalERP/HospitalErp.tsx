@@ -74,7 +74,7 @@ const HospitalERP = () => {
             <textarea
               placeholder="Please share anything that will help prepare for our meeting.*"
               className="p-3 rounded w-full md:col-span-2"
-              rows="4"
+              rows={4}
               required
             ></textarea>
             <div className="md:col-span-2">

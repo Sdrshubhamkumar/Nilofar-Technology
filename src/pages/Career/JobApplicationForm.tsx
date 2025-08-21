@@ -29,7 +29,7 @@ const JobApplicationForm = () => {
 
         <div>
           <label className="block font-medium">Full Address<span className="text-red-500">*</span></label>
-          <textarea className="w-full border border-gray-300 rounded px-4 py-2" rows="3" required></textarea>
+          <textarea className="w-full border border-gray-300 rounded px-4 py-2" rows={3} required></textarea>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -45,7 +45,7 @@ const JobApplicationForm = () => {
 
         <div>
           <label className="block font-medium">Why should we hire you? <span className="text-red-500">*</span></label>
-          <textarea className="w-full border border-gray-300 rounded px-4 py-2" rows="3" required></textarea>
+          <textarea className="w-full border border-gray-300 rounded px-4 py-2" rows={3} required></textarea>
         </div>
 
         <div>

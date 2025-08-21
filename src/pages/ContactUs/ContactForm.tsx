@@ -52,7 +52,7 @@ const ContactUs = () => {
               <input type="text" placeholder="Subject*" className="border w-full p-3 rounded-md" required />
             </div>
 
-            <textarea placeholder="Write A Message..." rows="5" className="border w-full p-3 rounded-md" required />
+            <textarea placeholder="Write A Message..." rows={5} className="border w-full p-3 rounded-md" required />
 
             {/* reCAPTCHA placeholder */}
             <div className="border p-4 rounded-md w-full md:w-[300px]">

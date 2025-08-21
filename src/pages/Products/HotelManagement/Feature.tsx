@@ -2,7 +2,11 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { useState } from "react";
 
-const Feature = ({ text }) => (
+type FeatureProps = {
+  text: string;
+};
+
+const Feature = ({ text }: FeatureProps) => (
   <li className="flex items-start space-x-2">
     {/* <CheckCircle2 className="text-sky-500 mt-1" /> */}
       <FaCheckCircle className="text-sky-500 mt-1 mr-2" />
@@ -11,7 +15,8 @@ const Feature = ({ text }) => (
 );
 
 export default function DemoFormPage() {
-  const [formData, setFormData] = useState({
+  // eslint-disable-next-line no-empty-pattern
+  const [] = useState({
     name: "",
     org: "",
     phone: "",

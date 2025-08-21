@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import Nilofarlogo from "../../assets/Nilofarlogo.png";
 
-const ListItem = ({ text, children }) => {
+type ListItemProps = {
+  text: string;
+  children?: { label: string; path: string }[];
+};
+
+const ListItem = ({ text, children }: ListItemProps) => {
   return (
     <li className="relative group cursor-pointer">
       <span className="hover:text-blue-500">{text}</span>
@@ -22,7 +27,12 @@ const ListItem = ({ text, children }) => {
   );
 };
 
-const MobileListItem = ({ text, children }) => {
+type MobileListItemProps = {
+  text: string;
+  children?: { label: string; path: string }[];
+};
+
+const MobileListItem = ({ text, children }: MobileListItemProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (

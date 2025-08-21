@@ -43,7 +43,7 @@ const DemoForm = () => {
             <option>Clinic</option>
           </select>
           <textarea
-            rows="3"
+            rows={3}
             placeholder="Anything to help prepare our meeting..."
             className="w-full p-3 rounded border border-gray-300"
           ></textarea>
