@@ -73,9 +73,10 @@ const MainNavbar = () => {
               alt="Nilofar Logo"
               className="h-14 w-14 rounded-full object-cover"
             />
-            <h1 className="text-xl sm:text-2xl font-bold text-blue-500">
-              Nilofar Technology
-            </h1>
+          <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+  Nilofar Technology
+</h1>
+
           </div>
 
           {/* Desktop Menu */}

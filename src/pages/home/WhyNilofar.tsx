@@ -1,8 +1,18 @@
 // import React from "react";
 import swdevelopmentteams from "../../assets/sw-development-teams.webp"; // Replace with your actual image path
 
-const WhyNilofar  = () => {
+const WhyNilofar = () => {
   const features = [
+    {
+      title: "Quality",
+      desc: "We deliver high-quality solutions that are thoroughly tested, reliable, and meet the highest industry standards.",
+      icon: "✅",
+    },
+    {
+      title: "Affordability",
+      desc: "We provide cost-effective services without compromising on quality, ensuring the best value for your investment.",
+      icon: "💰",
+    },
     {
       title: "Expertise",
       desc: "We have a team of highly skilled professionals with extensive experience in the IT industry.",
@@ -24,8 +34,8 @@ const WhyNilofar  = () => {
       icon: "🖥️",
     },
     {
-      title: "Customer Satisfaction:",
-      desc: "We prioritize customer satisfaction above all else. We actively listen to our clients, communicate effectively, and provide ongoing support to ensure their needs are met.",
+      title: "Customer Satisfaction",
+      desc: "We actively listen to our clients, communicate effectively, and provide ongoing support to ensure their needs are met.",
       icon: "🤝",
     },
   ];
@@ -33,7 +43,7 @@ const WhyNilofar  = () => {
   return (
     <section className="bg-[#262c3c] text-white px-6 md:px-16 py-12">
       <h2 className="text-gray-300 text-lg font-semibold">Why Choose Us ?</h2>
-      <h1 className="text-4xl font-bold text-white mb-6">Why Nilofar Technology</h1>
+      <h1 className="text-4xl font-bold text-white mb-6">Why Nilofar ?</h1>
       <div className="flex flex-col md:flex-row gap-10">
         {/* Left Features */}
         <div className="flex-1">
@@ -58,7 +68,11 @@ const WhyNilofar  = () => {
             className="rounded-lg w-full object-cover max-h-[400px]"
           />
           <div className="bg-white text-black font-semibold p-6 mt-6 text-center rounded shadow">
-            <span className="font-bold">Choosing <span className="text-black">US</span></span> means partnering with a trusted IT provider dedicated to helping your business thrive in the digital landscape.
+            <span className="font-bold">
+              Choosing <span className="text-black">US</span>
+            </span>{" "}
+            means partnering with a trusted IT provider dedicated to helping
+            your business thrive in the digital landscape.
           </div>
         </div>
       </div>

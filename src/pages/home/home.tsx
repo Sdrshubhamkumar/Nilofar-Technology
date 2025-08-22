@@ -5,7 +5,7 @@ import TechnologySection from './TechnologySection';
 import SchoolManagementBanner from './SchoolManagementBanner';
 import WhyNilofar  from './WhyNilofar';
 import WorkProcess from './WorkProcess';
-import TrustedClients from './TrustedClients';
+// import TrustedClients from './TrustedClients';
 import Footer from './Footer';
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
       <SchoolManagementBanner />
       <WhyNilofar />
       <WorkProcess />
-      <TrustedClients />
+      {/* <TrustedClients /> */}
       <Footer />
     </div>
   );

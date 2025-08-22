@@ -70,6 +70,9 @@ const WorkProcess = () => {
           </div>
         ))}
       </div>
+
+      {/* White horizontal line at bottom */}
+      <div className="mt-12 border-t-4 border-white opacity-80"></div>
     </section>
   );
 };
