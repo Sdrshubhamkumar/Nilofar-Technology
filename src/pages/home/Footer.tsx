@@ -90,7 +90,7 @@ const Footer = () => {
   <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
     <FaFacebookF />
   </a>
-  <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+  <a href="https://www.instagram.com/nilofartechnology/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-white">
     <FaInstagram />
   </a>
   <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
